@@ -20,7 +20,7 @@ pipeline {
         stage('Pull Docker Image from DockerHub') {
             steps {
                 script {
-                    echo "Pulling Docker image ${DDOCKER_FULL_IMAGE} from DockerHub"
+                    echo "Pulling Docker image ${DOCKER_FULL_IMAGE} from DockerHub"
                 }
             }
         }     
