@@ -16,7 +16,14 @@ pipeline {
     }
 
     stages 
-    {        
+    {   
+        stage('Pull Docker Image from DockerHub') {
+            steps {
+                script {
+                    echo "Pulling Docker image ${DDOCKER_FULL_IMAGE} from DockerHub"
+                }
+            }
+        }     
         stage('Deploy to Kubernetes') 
         {
             steps {
