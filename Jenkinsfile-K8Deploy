@@ -11,7 +11,7 @@ pipeline {
         K8_SERVICE_NAME = "spotifycloneapp-service"
         K8_NODE_PORT = 30003
         K8_CONTEXT_NAME = "kubernetes-admin@kubernetes"
-        K8_TARGET_PORT = "5500"
+        K8_TARGET_PORT = "80"
         CREDENTIALS_ID = "kube-config"
     }
 
